@@ -19,7 +19,7 @@ public class EmployeeController {
 	@Autowired
     private EmployeeServiceImpl employeeServiceImpl;
  
-    @GetMapping("/bharat")
+    @GetMapping("/employeeRocks")
     public String viewHomePage(Model model) {
         model.addAttribute("allemplist", employeeServiceImpl.getAllEmployee());
         return "index";
